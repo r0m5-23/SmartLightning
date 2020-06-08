@@ -5,8 +5,7 @@ Para facilitar a leitura deste ficheiro, usar o vscode (ou similar) e colocar em
 ## _1ª Fase_
 
 A primeira fase do código consiste em registar o dispositivo, conectá-lo ao The Things Network (TTN) e testar o envio de dados.<br>
-O código completo encontra-se nos ficheiros `SmartLightning(F1).ino` e `arduino_secrets.h`.
-
+O código completo encontra-se na pasta __SmartLightning_F1__.
 ## Registration
 
   ```c
