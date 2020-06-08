@@ -4,11 +4,13 @@ function Decoder(bytes, port) {
 
   if (port === 1){
     decoded.lux = ((bytes[0] << 8) | bytes[1]);
-    decoded.res = ((bytes[2] << 8) | bytes[3]);
-  }
+    decoded.vol = ((bytes[2] << 8) | bytes[3]);
+    decoded.res = ((bytes[4] << 8) | bytes[5]);
+  }  
 
   return{
-    Luminosidade: decoded.lux,
-    Resistencia: decoded.res
-  } 
+    Luminosidade: decoded.lux / 10,
+    Resistencia: decoded.res / 10.
+    Tensão: decoded.vol / 10
+  }   
 }
