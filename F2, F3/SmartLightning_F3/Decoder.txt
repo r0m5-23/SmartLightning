@@ -1,0 +1,14 @@
+function Decoder(bytes, port) {
+
+  var decoded = {};
+
+  if (port === 1){
+    decoded.lux = ((bytes[0] << 8) | bytes[1]);
+    decoded.res = ((bytes[2] << 8) | bytes[3]);
+  }
+
+  return{
+    Luminosidade: decoded.lux,
+    Resistencia: decoded.res
+  } 
+}
