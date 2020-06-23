@@ -27,11 +27,11 @@ Como resultado da 3ª fase, no The Things Network, obtemos o return dos seguinte
 Estes fields serão então integrados no The Things Speak.
 Primeiramente, temos que criar conta no TTS.
 
-![Create Account](./Img/TTS_Login.png)
+![Create Account](./F4img/TTS_Login.png)
 
 Depois de a conta estar criada e iniciada, temos que ir a `Channels`, selecionar `My Channels` e posteriormente criar um `New Channel`.
 
-![New Channel](./Img/TTS_NewChannel.png)
+![New Channel](./F4img/TTS_NewChannel.png)
 
 Obtendo assim os seguintes campos:
 
@@ -49,20 +49,23 @@ __Read API Key__
   ZTFU68DIOAYYDT4R
   ```
 
-No TTN adicionamos a integração `The Things Speak`, na qual inserimos os dados obtidos.
+No TTN adicionamos a integração `The Things Speak`, na qual inserimos os campos obtidos.
 
-![Add Integration](./Img/TTN_AddIntegration.png)
+![Add Integration](./F4img/TTN_AddIntegration.png)
 
-Depois de adicionada, está tudo pronto para começar a integrar os fields recebidos pelo arduino, sendo estes colocados por field nos respetivos gráficos.
+Depois de adicionada, recebemos os dados já descodificados que automaticamente são integrados.
 
-![TTN_Data](./Img/TTN_Data.png)</br>
-![TTS_View](./Img/TTS_View.png)
+![TTN_Data](./F4img/TTN_Data.png)</br>
+
+Sendo estes colocados nos respetivos gráficos.
+
+![TTS_View](./F4img/TTS_View.png)
 
 O Things Speak ainda fornece a interação com algumas aplicações como o Twitter, que permite enviar um react caso seja cumprida uma condição de um field à escolha. 
 Temos então que ir à opção das `Apps`, selecionar `ThingTweet` e associar a nossa conta `Link Twitter Account`. 
 Posteriormente, na mesma opção, precisamos de criar o react em `React` e selecionar `New React`.
 
-![TTS_Tweet](./Img/TTS_Tweet.png)
+![TTS_Tweet](./F4img/TTS_Tweet.png)
 
 Obtendo assim uma reação ao field à escolha.
 
