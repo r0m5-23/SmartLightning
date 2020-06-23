@@ -5,12 +5,15 @@ function Decoder(bytes, port) {
   if (port === 1){
     decoded.lux = ((bytes[0] << 8) | bytes[1]);
     decoded.vol = ((bytes[2] << 8) | bytes[3]);
-    decoded.res = ((bytes[4] << 8) | bytes[5]);
+    decoded.led = bytes[4]
+    if(decoded.led == 1) decoded.Status = "LED ON";
+    if(decoded.led === 0) decoded.Status = "LED OFF";
   }  
 
   return{
-    Luminosidade: decoded.lux / 10,
-    Resistencia: decoded.res / 10.
-    Tensão: decoded.vol / 10
-  }   
+    field1: decoded.lux / 10,
+    field2: decoded.vol / 10,
+    field3: decoded.led,
+    status: decoded.Status
+  } 
 }

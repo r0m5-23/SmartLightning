@@ -4,9 +4,10 @@ Para facilitar a leitura deste ficheiro, usar o vscode (ou similar) e colocar em
 
 ## _1ª Fase_
 
-A primeira fase do código consiste em registar o dispositivo, conectá-lo ao The Things Network (TTN) e testar o envio de dados.<br>
+A primeira fase  consiste em registar o dispositivo, conectá-lo ao The Things Network (TTN) e testar o envio de dados.<br>
 O código completo encontra-se na pasta __SmartLightning_F1__.
-## Registration
+
+ ## Registration
 
   ```c
     Serial.println(modem.deviceEUI());
@@ -48,7 +49,6 @@ O código completo encontra-se na pasta __SmartLightning_F1__.
     modem.print(txBuffer);
   ```
 
-
  ### Payload Formats (TTN)
 
   ```js
@@ -60,7 +60,7 @@ O código completo encontra-se na pasta __SmartLightning_F1__.
         return decoded;
     }
   ```
-
+  
  ### Payload - Test (TTN)
 
   ```plan

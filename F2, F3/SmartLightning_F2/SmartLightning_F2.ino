@@ -20,6 +20,7 @@ float resLrd = 0.0;
 float resValue = 0.0;
 float lux = 0.0;
 float luxValue = 0.0;
+int ledValue;
 uint8_t txBuffer[6];
 unsigned long time;
 unsigned long timeUpload;
@@ -54,24 +55,23 @@ void loop()
 
   analogValue = analogRead(ldrSensor); //(0-1023)
   voltage = analogValue * (5.0 / 1023.0); //(0V-5V)
-  resLrd = ((10000.0 * 5.0)/voltage) - 10000.0; //Low (voltage>>>2,5) ; High (voltage<<<2.4)
+  resLrd = ((10000.0 * 5.0)/voltage) - 10000.0; //Low (voltage>>>3) ; High (voltage<<<2)
   
   if (millis() - time > 60000){
     luxValue = (float)lux * 0.6 + (float)luxValue * 0.4;
     lux = 0;
     
-    resValue = (float)resLrd * 0.6 + (float)resValue * 0.4;
-    resLrd = 0;
-
     voltageValue = (float)lux * 0.6 + (float)luxValue * 0.4;
     voltage = 0;
 
     if(voltageValue <= 2){
       digitalWrite(LED, HIGH);
-      Serial.println("It's too dark, LED turn on!");
-    }else if (voltageValue >= 3 ){
+      ledValue = 1;
+      Serial.println("It's dark, LED turn on!");
+    } else {
       digitalWrite(LED, LOW);
-      Serial.println("It's too bright, LED turn off!");
+      ledValue = 0;
+      Serial.println("It's bright, LED turn off!");
     }
 
     time = millis();
@@ -89,16 +89,13 @@ void loop()
     txBuffer[2] = (valVol >> 8) & 0xff;
     txBuffer[3] = valVol & 0xff;
 
-    int valRes = (int) (resValue * 10);
-    txBuffer[4] = (valRes >> 8) & 0xff;
-    txBuffer[5] = valRes & 0xff;
-
+    txBuffer[4] = ledValue & 0xff;
+    
     //Serial.println(txBuffer[0], HEX);
     //Serial.println(txBuffer[1], HEX);
     //Serial.println(txBuffer[2], HEX);
     //Serial.println(txBuffer[3], HEX);
-    //Serial.println(txBuffer[4], HEX);
-    //Serial.println(txBuffer[5], HEX);
+    
 
     // Sending data
     int err;
