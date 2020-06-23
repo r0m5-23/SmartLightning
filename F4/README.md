@@ -24,8 +24,7 @@ Como resultado da 3ª fase, no The Things Network, obtemos o return dos seguinte
     }
   ```
 
-Estes fields serão então integrados no The Things Speak.
-Primeiramente, temos que criar conta no TTS.
+Estes fields serão então integrados no The Things Speak tendo que, primeiramente, criar uma conta.
 
 ![Create Account](./F4img/TTS_Login.png)
 
