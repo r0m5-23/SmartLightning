@@ -146,7 +146,7 @@ Integração dos dados no The Things Speak:
 
 ![TTN_ViewF](./Img/TTS_ViewF.png)</br>
 
-React através do Twitter quando o LED está ON:
+React através do <a href="https://twitter.com/ttnsensores"/>__Twitter__</a> quando o LED está ON:
 
 ![TTS_Twitter](./Img/TTS_Twitter.png)
 
@@ -154,7 +154,7 @@ React através do Twitter quando o LED está ON:
 
 Como esperado, podemos verificar o êxito de todas as fases.</br>
 É de notar, que esta é uma simulação e não foi possível testar o equipamento devido ao ano atípico a que estivemos sujeitos (Covid-19), não permitindo analisar com precisão os resultados obtidos.</br>
-Para concluir, este projeto foi desenvolvido no âmbito da Unidade Curricular: __Instrumentação e Sensores__, Curso: __Mestrado Integrado em Engenharia Eletrotécnica e de Computadores__, Universidade: <a target="_blanc" href="https://www.utad.pt"/>__UTAD__</a>.
+Para concluir, este projeto foi desenvolvido no âmbito da Unidade Curricular: __Instrumentação e Sensores__, Curso: __Mestrado Integrado em Engenharia Eletrotécnica e de Computadores__, Universidade: <a href="https://www.utad.pt"/>__UTAD__</a>.
 
 ## Trabalho Realizado por
 
