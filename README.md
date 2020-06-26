@@ -144,11 +144,11 @@ Resultado:
 
 ### 4ª Fase
 
-Integração dos dados no  <a target="_blanc" href="https://thingspeak.com/channels/1086297"/>__The Things Speak__:
+Integração dos dados no  <a target="_blanc" href="https://thingspeak.com/channels/1086297"/>__The Things Speak__</a>:
 
 ![TTN_ViewF](./Img/TTS_ViewF.png)</br>
 
-React através do <a target="_blanc" href="https://twitter.com/ttnsensores"/>__Twitter__ quando o LED está ON:
+React através do <a target="_blanc" href="https://twitter.com/ttnsensores"/>__Twitter__</a> quando o LED está ON:
 
 ![TTS_Twitter](./Img/TTS_Twitter.png)
 
