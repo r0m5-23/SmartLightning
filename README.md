@@ -1,6 +1,8 @@
-# SmartLightning_app
+# SmartLightning
 
 > IOT - Smart Lightning Application.
+
+Para facilitar a leitura deste ficheiro, usar o vscode (ou similar) e colocar em modo "__preview__".
 
 ## Equipment
 
@@ -142,11 +144,11 @@ Resultado:
 
 ### 4ª Fase
 
-Integração dos dados no The Things Speak:
+Integração dos dados no  <a target="_blanc" href="https://thingspeak.com/channels/1086297"/>__The Things Speak__:
 
 ![TTN_ViewF](./Img/TTS_ViewF.png)</br>
 
-React através do Twitter quando o LED está ON:
+React através do <a target="_blanc" href="https://twitter.com/ttnsensores"/>__Twitter__ quando o LED está ON:
 
 ![TTS_Twitter](./Img/TTS_Twitter.png)
 

@@ -1,4 +1,4 @@
-# Smart Light
+# SmartLightning
 
 Para facilitar a leitura deste ficheiro, usar o vscode (ou similar) e colocar em modo "__preview__".
 
