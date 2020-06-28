@@ -3,6 +3,7 @@
 > IOT - Smart Lightning Application.
 
 Para facilitar a leitura deste ficheiro, usar o vscode (ou similar) e colocar em modo "__preview__".
+Qualquer eventual alteração/atualização deste projeto encontrar-se-á no <a target="_blanc" href="https://github.com/r0m5-23/SmartLightning"/>__Github__</a>.
 
 ## Equipment
 
@@ -32,7 +33,7 @@ Para facilitar a leitura deste ficheiro, usar o vscode (ou similar) e colocar em
 
 ## Overview
 
-Este projeto tem como intuito a criação de uma aplicação Smart Lightning em IOT.</br>
+Este projeto tem como intuito, a criação de uma aplicação Smart Lightning em IOT.</br>
 Neste caso, iremos usar os dois sensores acima referidos, de forma a ter noção da `Luminosidade` e da `Tensão` a que está sujeito um espaço interior, mediante a luz solar que é incidida no mesmo, ligando ou desligando um LED. Este LED dispensa qualquer interação humana, o que permite obter um sistema inteligente e eficiente de ligar e desligar a luz, dependendo da condição exterior.</br>
 É importante salientar o uso do protocolo LoRaWAN, através do arduino MKRWAN e do The Things Network, que torna possível não só armazenamento e análise de dados mas também, uma vantajosa interação com diversas aplicações que permite uma reação aos mesmos, desde enviar um tweet quando uma condição é cumprida (abordada neste trabalho), a uma aplicação de telemóvel que permite interagir com o dispositivo, sendo possível ligar e desligar a luz do LED através da mesma.
 
