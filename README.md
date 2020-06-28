@@ -3,7 +3,7 @@
 > IOT - Smart Lightning Application.
 
 Para facilitar a leitura deste ficheiro, usar o vscode (ou similar) e colocar em modo "__preview__".</br>
-Qualquer eventual alteração/atualização deste projeto encontrar-se-á no <a target="_blanc" href="https://github.com/r0m5-23/SmartLightning"/>__Github__</a>.
+Qualquer eventual alteração/atualização deste projeto, encontrar-se-á no <a target="_blanc" href="https://github.com/r0m5-23/SmartLightning"/>__Github__</a>.
 
 ## Equipment
 
